@@ -1,0 +1,1309 @@
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+  width: 100%;
+  height: 80px;
+  padding: 0 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fffaf7;
+  border-bottom: 1px solid #f1e5df;
+}
+
+.logo {
+  font-family: Georgia, serif;
+  font-size: 28px;
+  font-weight: bold;
+  color: #4b2e2a;
+}
+
+.logo span {
+  color: #c96f72;
+}
+
+.nav-links {
+  display: flex;
+  gap: 32px;
+}
+
+.nav-links a {
+  font-size: 15px;
+  color: #5c4540;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #c96f72;
+}
+
+.order-btn {
+  border: none;
+  background: #4b2e2a;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.order-btn:hover {
+  transform: translateY(-2px);
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 7%;
+  background: linear-gradient(120deg, #fffaf7 0%, #fff3ef 100%);
+}
+
+.hero-content {
+  width: 50%;
+  max-width: 650px;
+}
+
+.small-heading {
+  color: #c96f72;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-family: Georgia, serif;
+  font-size: clamp(48px, 6vw, 78px);
+  line-height: 1.05;
+  color: #422b27;
+  margin-bottom: 25px;
+}
+
+.hero h1 span {
+  display: block;
+  color: #c96f72;
+  font-style: italic;
+}
+
+.hero-description {
+  max-width: 540px;
+  font-size: 17px;
+  line-height: 1.8;
+  color: #765f59;
+  margin-bottom: 32px;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 35px;
+}
+
+.primary-btn,
+.secondary-btn {
+  padding: 15px 28px;
+  border-radius: 30px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.primary-btn {
+  background: #c96f72;
+  color: white;
+  border: 2px solid #c96f72;
+}
+
+.primary-btn:hover {
+  background: #b65f63;
+  transform: translateY(-2px);
+}
+
+.secondary-btn {
+  background: transparent;
+  color: #4b2e2a;
+  border: 2px solid #4b2e2a;
+}
+
+.secondary-btn:hover {
+  background: #4b2e2a;
+  color: white;
+}
+
+
+/* =========================
+   FEATURES
+========================= */
+
+.features {
+  display: flex;
+  gap: 25px;
+  color: #765f59;
+  font-size: 13px;
+}
+
+
+/* =========================
+   HERO IMAGE
+========================= */
+
+.hero-image {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cake-image-wrapper {
+  position: relative;
+  width: 470px;
+  height: 560px;
+}
+
+.cake-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  border-radius: 220px 220px 30px 30px;
+
+  box-shadow: 0 20px 50px rgba(75, 46, 42, 0.15);
+
+  transition: transform 0.4s ease;
+}
+
+.cake-image:hover {
+  transform: scale(1.02);
+}
+
+
+/* =========================
+   IMAGE BADGE
+========================= */
+
+.image-badge {
+  position: absolute;
+  left: -45px;
+  bottom: 45px;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  background: white;
+
+  padding: 14px 20px;
+  border-radius: 15px;
+
+  box-shadow: 0 10px 30px rgba(75, 46, 42, 0.15);
+}
+
+.image-badge > span {
+  font-size: 25px;
+  color: #c96f72;
+}
+
+.image-badge strong {
+  color: #4b2e2a;
+  font-size: 14px;
+}
+
+.image-badge p {
+  margin-top: 3px;
+  color: #8b7470;
+  font-size: 11px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+  .nav-links {
+    display: none;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    gap: 50px;
+  }
+
+  .hero-content,
+  .hero-image {
+    width: 100%;
+  }
+
+  .hero-description {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-buttons,
+  .features {
+    justify-content: center;
+  }
+
+  .cake-image-wrapper {
+    width: 100%;
+    max-width: 400px;
+    height: 450px;
+    margin: auto;
+  }
+
+  .image-badge {
+    left: 10px;
+  }
+}
+
+@media (max-width: 550px) {
+
+  .navbar {
+    padding: 0 5%;
+  }
+
+  .logo {
+    font-size: 23px;
+  }
+
+  .order-btn {
+    padding: 10px 17px;
+  }
+
+  .hero {
+    padding: 50px 5%;
+  }
+
+  .hero h1 {
+    font-size: 45px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .features {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .cake-image-wrapper {
+    height: 400px;
+  }
+}
+
+
+
+
+
+/* =========================
+   BESTSELLERS SECTION
+========================= */
+
+.bestsellers {
+  padding: 100px 7%;
+  background: #ffffff;
+}
+
+.section-heading {
+  max-width: 600px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.section-tag {
+  color: #c96f72;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  margin-bottom: 12px;
+}
+
+.section-heading h2 {
+  font-family: Georgia, serif;
+  font-size: 48px;
+  color: #422b27;
+  margin-bottom: 15px;
+}
+
+.section-heading > p:last-child {
+  color: #806b65;
+  line-height: 1.7;
+}
+
+
+/* =========================
+   CAKE GRID
+========================= */
+
+.cake-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+
+/* =========================
+   CAKE CARD
+========================= */
+
+.cake-card {
+  background: #fffaf7;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid #f1e5df;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.cake-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 40px rgba(75, 46, 42, 0.12);
+}
+
+
+/* Cake image area */
+
+.cake-card-image {
+  height: 280px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: linear-gradient(
+    135deg,
+    #f9e5e1,
+    #f3d2cd
+  );
+
+  font-size: 90px;
+}
+
+
+/* =========================
+   CAKE INFORMATION
+========================= */
+
+.cake-info {
+  padding: 22px;
+}
+
+.cake-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+
+  margin-bottom: 10px;
+}
+
+.cake-top h3 {
+  font-family: Georgia, serif;
+  font-size: 20px;
+  color: #422b27;
+}
+
+.rating {
+  white-space: nowrap;
+
+  font-size: 12px;
+  color: #b8753b;
+
+  background: #fff3df;
+
+  padding: 5px 8px;
+  border-radius: 20px;
+}
+
+.cake-info > p {
+  color: #806b65;
+
+  font-size: 13px;
+  line-height: 1.6;
+
+  min-height: 42px;
+
+  margin-bottom: 22px;
+}
+
+
+/* =========================
+   PRICE + VIEW BUTTON
+========================= */
+
+.cake-bottom {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.cake-bottom small {
+  display: block;
+
+  color: #a08b85;
+  font-size: 10px;
+
+  margin-bottom: 3px;
+}
+
+.cake-bottom h4 {
+  font-family: Georgia, serif;
+
+  color: #c96f72;
+  font-size: 22px;
+}
+
+.cake-bottom button {
+  border: none;
+  background: transparent;
+
+  color: #4b2e2a;
+
+  font-weight: 600;
+  font-size: 12px;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cake-bottom button:hover {
+  color: #c96f72;
+}
+
+
+/* =========================
+   VIEW ALL BUTTON
+========================= */
+
+.view-all-btn {
+  display: block;
+
+  margin: 45px auto 0;
+
+  padding: 14px 30px;
+
+  border: 1px solid #4b2e2a;
+  border-radius: 30px;
+
+  background: transparent;
+  color: #4b2e2a;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.view-all-btn:hover {
+  background: #4b2e2a;
+  color: white;
+}
+
+
+/* =========================
+   BESTSELLERS RESPONSIVE
+========================= */
+
+@media (max-width: 1100px) {
+
+  .cake-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .bestsellers {
+    padding: 70px 5%;
+  }
+
+  .section-heading h2 {
+    font-size: 38px;
+  }
+
+  .cake-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cake-card-image {
+    height: 250px;
+  }
+}
+/* =========================
+   REAL CAKE IMAGES
+========================= */
+
+.cake-card-image {
+  overflow: hidden;
+}
+
+.cake-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.cake-card:hover .cake-card-image img {
+  transform: scale(1.07);
+}
+/* =========================
+   CUSTOM CAKE SECTION
+========================= */
+
+.custom-cake {
+  padding: 100px 7%;
+  background: #fff5f1;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+.custom-left {
+  width: 50%;
+  max-width: 600px;
+}
+
+.custom-left h2 {
+  font-family: Georgia, serif;
+  font-size: 52px;
+  line-height: 1.1;
+  color: #422b27;
+  margin-bottom: 22px;
+}
+
+.custom-left h2 span {
+  color: #c96f72;
+  font-style: italic;
+}
+
+.custom-description {
+  color: #806b65;
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 35px;
+}
+
+
+/* STEPS */
+
+.custom-features {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.custom-features div {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.custom-features span {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #c96f72;
+  color: white;
+
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.custom-features p {
+  color: #5c4540;
+  font-size: 14px;
+}
+
+
+/* FORM */
+
+.custom-form {
+  width: 45%;
+  max-width: 500px;
+
+  background: white;
+
+  padding: 40px;
+  border-radius: 25px;
+
+  box-shadow: 0 20px 60px rgba(75, 46, 42, 0.1);
+}
+
+.custom-form h3 {
+  font-family: Georgia, serif;
+  color: #422b27;
+
+  font-size: 26px;
+
+  margin-bottom: 28px;
+}
+
+.custom-form label {
+  display: block;
+
+  color: #5c4540;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  margin: 16px 0 7px;
+}
+
+.custom-form select,
+.custom-form input {
+  width: 100%;
+
+  padding: 13px 15px;
+
+  border: 1px solid #eadbd5;
+  border-radius: 10px;
+
+  background: #fffaf7;
+
+  color: #5c4540;
+
+  outline: none;
+}
+
+.custom-form select:focus,
+.custom-form input:focus {
+  border-color: #c96f72;
+}
+
+
+/* ORDER BUTTON */
+
+.custom-order-btn {
+  width: 100%;
+
+  margin-top: 25px;
+  padding: 15px;
+
+  border: none;
+  border-radius: 30px;
+
+  background: #4b2e2a;
+  color: white;
+
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.custom-order-btn:hover {
+  background: #c96f72;
+  transform: translateY(-2px);
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 850px) {
+
+  .custom-cake {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .custom-left,
+  .custom-form {
+    width: 100%;
+  }
+
+  .custom-left {
+    text-align: center;
+  }
+
+  .custom-features {
+    align-items: center;
+  }
+}
+
+@media (max-width: 550px) {
+
+  .custom-cake {
+    padding: 70px 5%;
+  }
+
+  .custom-left h2 {
+    font-size: 40px;
+  }
+
+  .custom-form {
+    padding: 25px;
+  }
+}
+/* =========================
+   ESTIMATED PRICE
+========================= */
+
+.estimated-price {
+  margin-top: 22px;
+  padding: 15px 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: #fff5f1;
+  border: 1px solid #f1e5df;
+  border-radius: 12px;
+}
+
+.estimated-price span {
+  color: #806b65;
+  font-size: 13px;
+}
+
+.estimated-price strong {
+  font-family: Georgia, serif;
+  color: #c96f72;
+  font-size: 24px;
+}
+/* ========================================
+   ABOUT US SECTION
+======================================== */
+
+.about-section {
+  padding: 110px 7%;
+  background: linear-gradient(
+    135deg,
+    #fff7f3,
+    #fffaf7
+  );
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 80px;
+}
+
+
+/* LEFT SIDE */
+
+.about-content {
+  width: 55%;
+  max-width: 650px;
+}
+
+.about-content h2 {
+  font-family: Georgia, serif;
+
+  font-size: 52px;
+  line-height: 1.1;
+
+  color: #422b27;
+
+  margin: 12px 0 25px;
+}
+
+.about-content h2 span {
+  color: #c96f72;
+  font-style: italic;
+}
+
+.about-description {
+  color: #806b65;
+
+  font-size: 15px;
+  line-height: 1.8;
+
+  margin-bottom: 15px;
+}
+
+
+/* ========================================
+   ABOUT STATS
+======================================== */
+
+.about-stats {
+  display: flex;
+
+  gap: 45px;
+
+  margin-top: 35px;
+  padding-top: 25px;
+
+  border-top: 1px solid #eadbd5;
+}
+
+.about-stats h3 {
+  font-family: Georgia, serif;
+
+  color: #c96f72;
+
+  font-size: 24px;
+
+  margin-bottom: 5px;
+}
+
+.about-stats p {
+  color: #806b65;
+  font-size: 12px;
+}
+
+
+/* ========================================
+   ABOUT RIGHT CARD
+======================================== */
+
+.about-card {
+  width: 38%;
+  max-width: 430px;
+
+  padding: 55px 45px;
+
+  text-align: center;
+
+  background: #ffffff;
+
+  border: 1px solid #f0ded7;
+  border-radius: 30px;
+
+  box-shadow:
+    0 20px 50px rgba(75, 46, 42, 0.1);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-7px);
+
+  box-shadow:
+    0 25px 60px rgba(75, 46, 42, 0.15);
+}
+
+
+/* ICON */
+
+.about-icon {
+  width: 75px;
+  height: 75px;
+
+  margin: 0 auto 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #fff0ed;
+
+  border-radius: 50%;
+
+  font-size: 34px;
+}
+
+
+/* CARD HEADING */
+
+.about-card h3 {
+  font-family: Georgia, serif;
+
+  font-size: 30px;
+  line-height: 1.25;
+
+  color: #422b27;
+
+  margin-bottom: 20px;
+}
+
+
+/* CARD DESCRIPTION */
+
+.about-card p {
+  color: #806b65;
+
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+
+/* SIGNATURE */
+
+.about-signature {
+  margin-top: 30px;
+
+  font-family: Georgia, serif;
+  font-style: italic;
+
+  font-size: 20px;
+
+  color: #c96f72;
+}
+
+
+/* ========================================
+   ABOUT RESPONSIVE
+======================================== */
+
+@media (max-width: 850px) {
+
+  .about-section {
+    flex-direction: column;
+
+    padding: 80px 6%;
+
+    gap: 50px;
+  }
+
+  .about-content,
+  .about-card {
+    width: 100%;
+    max-width: 650px;
+  }
+
+  .about-content {
+    text-align: center;
+  }
+
+  .about-stats {
+    justify-content: center;
+  }
+}
+
+
+@media (max-width: 550px) {
+
+  .about-section {
+    padding: 70px 5%;
+  }
+
+  .about-content h2 {
+    font-size: 39px;
+  }
+
+  .about-stats {
+    gap: 20px;
+    justify-content: space-between;
+  }
+
+  .about-card {
+    padding: 40px 25px;
+  }
+}
+/* ========================================
+   CONTACT SECTION
+======================================== */
+
+.contact-section {
+  padding: 110px 7%;
+  background: #ffffff;
+}
+
+.contact-heading {
+  max-width: 720px;
+  margin: 0 auto 60px;
+  text-align: center;
+}
+
+.contact-heading h2 {
+  font-family: Georgia, serif;
+  font-size: 48px;
+  line-height: 1.15;
+  color: #422b27;
+  margin: 12px 0 18px;
+}
+
+.contact-heading h2 span {
+  color: #c96f72;
+  font-style: italic;
+}
+
+.contact-heading > p:last-child {
+  color: #806b65;
+  line-height: 1.7;
+}
+
+
+/* ================= CONTACT CARDS ================= */
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.contact-card {
+  padding: 38px 30px;
+  text-align: center;
+
+  background: #fffaf7;
+
+  border: 1px solid #f1e5df;
+  border-radius: 22px;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-7px);
+
+  box-shadow:
+    0 18px 40px rgba(75, 46, 42, 0.1);
+}
+
+.contact-icon {
+  width: 65px;
+  height: 65px;
+
+  margin: 0 auto 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #fff0ed;
+
+  font-size: 28px;
+}
+
+.contact-card h3 {
+  font-family: Georgia, serif;
+
+  color: #422b27;
+  font-size: 22px;
+
+  margin-bottom: 12px;
+}
+
+.contact-card p {
+  color: #806b65;
+
+  font-size: 13px;
+  line-height: 1.7;
+
+  margin-bottom: 20px;
+}
+
+.contact-link {
+  border: none;
+  background: transparent;
+
+  color: #c96f72;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.contact-link:hover {
+  color: #4b2e2a;
+}
+
+.contact-note {
+  color: #c96f72;
+
+  font-size: 12px;
+  font-weight: 600;
+}
+
+
+/* ========================================
+   CONTACT CTA
+======================================== */
+
+.contact-cta {
+  margin-top: 60px;
+  padding: 40px 45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 30px;
+
+  background: #4b2e2a;
+
+  border-radius: 25px;
+}
+
+.contact-cta p {
+  color: #e8b7b3;
+
+  font-size: 11px;
+  font-weight: bold;
+
+  letter-spacing: 2px;
+
+  margin-bottom: 8px;
+}
+
+.contact-cta h3 {
+  font-family: Georgia, serif;
+
+  color: white;
+
+  font-size: 27px;
+}
+
+.contact-cta button {
+  flex-shrink: 0;
+
+  padding: 14px 25px;
+
+  border: none;
+  border-radius: 30px;
+
+  background: #c96f72;
+  color: white;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.contact-cta button:hover {
+  background: white;
+
+  color: #4b2e2a;
+
+  transform: translateY(-2px);
+}
+
+
+/* ========================================
+   FOOTER
+======================================== */
+
+.footer {
+  padding: 60px 7% 25px;
+
+  background: #fff5f1;
+
+  text-align: center;
+}
+
+.footer-brand {
+  max-width: 450px;
+
+  margin: auto;
+}
+
+.footer-brand p {
+  margin-top: 12px;
+
+  color: #806b65;
+
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.footer-links {
+  margin: 35px 0;
+
+  display: flex;
+  justify-content: center;
+
+  gap: 30px;
+
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: #5c4540;
+
+  font-size: 13px;
+
+  text-decoration: none;
+
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: #c96f72;
+}
+
+.footer-bottom {
+  padding-top: 20px;
+
+  border-top: 1px solid #eadbd5;
+
+  color: #9a817b;
+
+  font-size: 11px;
+}
+
+
+/* ========================================
+   CONTACT RESPONSIVE
+======================================== */
+
+@media (max-width: 850px) {
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-cta {
+    flex-direction: column;
+
+    text-align: center;
+  }
+
+}
+
+
+@media (max-width: 550px) {
+
+  .contact-section {
+    padding: 75px 5%;
+  }
+
+  .contact-heading h2 {
+    font-size: 38px;
+  }
+
+  .contact-cta {
+    padding: 32px 22px;
+  }
+
+  .contact-cta h3 {
+    font-size: 23px;
+  }
+
+  .footer {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+}
